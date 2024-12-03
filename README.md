@@ -48,7 +48,7 @@ python manage.py runserver
 ```
 ### mail application usage
 - Open the browser and navigate to `http://localhost:8000/`
-- Register at least 2 new users
+- Register at least 2 new users. User should be "username@something.com"
 - Compose, send, receive, and archive emails
 - Log out and log in as another user to view the emails
 
