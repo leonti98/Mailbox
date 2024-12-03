@@ -1,0 +1,37 @@
+{% extends "mail/layout.html" %}
+{% block body %}
+    <div class=" d-flex justify-content-center align-items-center flex-grow-1 flex-column min-vh-100">
+        <h2>Register</h2>
+        {% if message %}<div>{{ message }}</div>{% endif %}
+        <div class="d-flex justify-content-center align-items-center flex-column">
+            <form action="{% url 'register' %}" method="post">
+                {% csrf_token %}
+                <div class="mb-3">
+                    <label for="Email1Input" class="form-label">Email address</label>
+                    <input type="email"
+                           class="form-control"
+                           name="email"
+                           id="Email1Input"
+                           aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                    <label for="PasswordInput" class="form-label">Password</label>
+                    <input type="password"
+                           name="password"
+                           class="form-control"
+                           id="PasswordInput">
+                </div>
+                <div class="mb-3">
+                    <label for="PasswordRepeate" class="form-label">Password</label>
+                    <input type="password"
+                           name="confirmation"
+                           class="form-control"
+                           id="PasswordRepeate"
+                           placeholder="Confirm Password">
+                </div>
+                <button type="submit" class="btn btn-primary" value="login">Submit</button>
+            </form>
+            Already have an account? <a href="{% url 'login' %}">Log In here.</a>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,46 @@
+#compose-body {
+    height: 400px;
+}
+
+/* EMAIL */
+
+.text-singleline{
+    text-overflow: ellipsis; 
+    overflow: hidden; 
+    white-space: nowrap;
+}
+#email-list-warpper{
+    max-height: 85vh;
+    min-height: 75vh;
+    background-color: #e1e5e9;
+}
+.list-group{
+    border: none;
+}
+.list-group-item{
+    background-color: #edf1f6;
+    border: none;
+}
+.list-group-item.active{
+    background-color: #fff;
+}
+
+.bg-blue-300 {
+    background-color: #64B5F6;
+}
+
+#mainBody {
+    min-height: 90vh;
+}
+
+.form-control {
+    margin-top: 5px;
+}
+
+.icons {
+    text-align: end;
+}
+#email-content{
+    max-height: 85vh;
+    min-height: 75vh;
+}
